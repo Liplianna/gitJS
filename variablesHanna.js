@@ -1,14 +1,20 @@
-let greeting "Hello!";
-console.log(greeting);
+let store = "Xstore", name = "Incognito";
+console.log(`Name:${store} ${name}`)
 
-let message;
-message = "any message";
-console.log(message);
+let StoreDescription = {
+    goods: 10000,
+    employees: ["Jack", "Tom", "Ralf"],
+    products: [
+        { name: "MobilePhone", price: 1000 },
+        { name: "HeadPhones", price: 300 },
+        { name: "Watch", price: 100 }
 
-let number = 1;
-number = 2;
-console.log(number);
+    ],
+    open: true
+}
 
-const PI = 3.14;
-PI = 4;
-console.log(Pi);
+console.log(StoreDescription.products);
+for (const product of StoreDescription.products) {
+    console.log(product.name);
+};
+console.log(StoreDescription.open);
